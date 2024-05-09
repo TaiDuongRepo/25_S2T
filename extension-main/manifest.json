@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "S2T",
+    "name": "Paso",
     "version": "1.0",
     "permissions": ["tabs", "scripting", "activeTab", "sidePanel", "contextMenus", 
         "storage","tabCapture"],
