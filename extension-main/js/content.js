@@ -562,83 +562,83 @@ function startRecord(subText) {
  
   
 let list_text = [];
-// function startRecord(subText) {
-//   const ws = new WebSocket('ws://127.0.0.1:8000/ws/audio/');
-//   ws.onopen = function(e) {
-//     console.log('WebSocket is open now !!!');
-//   };
+function startRecord(subText) {
+  const ws = new WebSocket('ws://127.0.0.1:8000/ws/audio/');
+  ws.onopen = function(e) {
+    console.log('WebSocket is open now !!!');
+  };
 
 
-//   navigator.mediaDevices.getDisplayMedia({ video: true, audio: true }).then(stream => {
+  navigator.mediaDevices.getDisplayMedia({ video: true, audio: true }).then(stream => {
 
-//     const options = {
-//       audioBitsPerSecond: 128000,
-//       videoBitsPerSecond: 2500000,
-//       mimeType: 'video/webm;codecs=vp9,opus',
-//     };
-//     recorder = new MediaRecorder(stream, options);
+    const options = {
+      audioBitsPerSecond: 128000,
+      videoBitsPerSecond: 2500000,
+      mimeType: 'video/webm;codecs=vp9,opus',
+    };
+    recorder = new MediaRecorder(stream, options);
 
-//     let isRecording = false; // Thêm biến này để theo dõi trạng thái ghi âm
-//     let recordTimeout; // Biến để theo dõi hẹn giờ
+    let isRecording = false; // Thêm biến này để theo dõi trạng thái ghi âm
+    let recordTimeout; // Biến để theo dõi hẹn giờ
 
-//     recorder.addEventListener('dataavailable', async evt => {
-//       if (recorder.state === "inactive") {
-//         console.log('Turn Off Record !!!');
-//         isRecording = false;
-//         return;
-//       }
+    recorder.addEventListener('dataavailable', async evt => {
+      if (recorder.state === "inactive") {
+        console.log('Turn Off Record !!!');
+        isRecording = false;
+        return;
+      }
 
-//       if (evt.data.size > 0 && recorder.state === "recording" && isRecording === true) { 
-//         const blob = new Blob([evt.data], { type: 'video/webm' }); 
-//         const reader = new FileReader();
-//         reader.onload = function() {
-//             const bytes = new Uint8Array(reader.result);  
-//             ws.send(bytes);
-//         }
-//         reader.readAsArrayBuffer(blob);
+      if (evt.data.size > 0 && recorder.state === "recording" && isRecording === true) { 
+        const blob = new Blob([evt.data], { type: 'video/webm' }); 
+        const reader = new FileReader();
+        reader.onload = function() {
+            const bytes = new Uint8Array(reader.result);  
+            ws.send(bytes);
+        }
+        reader.readAsArrayBuffer(blob);
 
-//         // lấy dữ liệu từ websocket
-//         ws.onmessage = function(event) {
-//           const message = JSON.parse(event.data);
-//           console.log(message.text);
-//           // if (list_text.length === 0) {
-//           //   list_text.push(message.text);
-//           //   subText.textContent += "\u200B" + list_text[list_text.length - 1]; 
-//           // } else if (list_text.length > 3) {
-//           //   list_text = [];
-//           //   list_text.push(message.text);
-//           //   subText.textContent += "\u200B" + list_text[list_text.length - 1];
-//           // } else {
-//           //   list_text.push(message.text);
-//           //   let subTextContentArray = subText.textContent.split("\u200B");
-//           //   let remove = subTextContentArray.pop();
-//           //   subText.textContent -= remove;
-//           //   subText.textContent += "\u200B" + list_text[list_text.length - 1];
-//           // }
-//           subText.textContent += "\u200B" + message.text;
-//           scrollToBottom(subText);
-//           chrome.storage.local.set({summariseChat: subText.innerText,isSummarise:isSummarise}, function() {
-//             console.log('summariseChat đã được lưu');
-//           });
-//         };
+        // lấy dữ liệu từ websocket
+        ws.onmessage = function(event) {
+          const message = JSON.parse(event.data);
+          console.log(message.text);
+          // if (list_text.length === 0) {
+          //   list_text.push(message.text);
+          //   subText.textContent += "\u200B" + list_text[list_text.length - 1]; 
+          // } else if (list_text.length > 3) {
+          //   list_text = [];
+          //   list_text.push(message.text);
+          //   subText.textContent += "\u200B" + list_text[list_text.length - 1];
+          // } else {
+          //   list_text.push(message.text);
+          //   let subTextContentArray = subText.textContent.split("\u200B");
+          //   let remove = subTextContentArray.pop();
+          //   subText.textContent -= remove;
+          //   subText.textContent += "\u200B" + list_text[list_text.length - 1];
+          // }
+          subText.textContent += "\u200B" + message.text;
+          scrollToBottom(subText);
+          chrome.storage.local.set({summariseChat: subText.innerText,isSummarise:isSummarise}, function() {
+            console.log('summariseChat đã được lưu');
+          });
+        };
         
-//       }
-//     });
+      }
+    });
 
-//     const recordDuration = 1000; // Thời gian ghi âm trong mỗi lần
-//     const restartRecording = () => {
-//       recorder.stop();
-//       clearInterval(recordTimeout);
-//       recorder.start();
-//       isRecording = true;
-//       recordTimeout = setTimeout(restartRecording, recordDuration);
-//     };
+    const recordDuration = 1000; // Thời gian ghi âm trong mỗi lần
+    const restartRecording = () => {
+      recorder.stop();
+      clearInterval(recordTimeout);
+      recorder.start();
+      isRecording = true;
+      recordTimeout = setTimeout(restartRecording, recordDuration);
+    };
 
-//     recorder.start();
-//     isRecording = true;
-//     recordTimeout = setTimeout(restartRecording, recordDuration);
-//   });
-// }
+    recorder.start();
+    isRecording = true;
+    recordTimeout = setTimeout(restartRecording, recordDuration);
+  });
+}
 
 
 function waitForSubtitles() {
