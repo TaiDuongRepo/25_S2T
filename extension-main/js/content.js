@@ -601,20 +601,20 @@ function startRecord(subText) {
         ws.onmessage = function(event) {
           const message = JSON.parse(event.data);
           console.log(message.text);
-          // if (list_text.length === 0) {
-          //   list_text.push(message.text);
-          //   subText.textContent += "\u200B" + list_text[list_text.length - 1]; 
-          // } else if (list_text.length > 3) {
-          //   list_text = [];
-          //   list_text.push(message.text);
-          //   subText.textContent += "\u200B" + list_text[list_text.length - 1];
-          // } else {
-          //   list_text.push(message.text);
-          //   let subTextContentArray = subText.textContent.split("\u200B");
-          //   let remove = subTextContentArray.pop();
-          //   subText.textContent -= remove;
-          //   subText.textContent += "\u200B" + list_text[list_text.length - 1];
-          // }
+          if (list_text.length === 0) {
+            list_text.push(message.text);
+            subText.textContent += "\u200B" + list_text[list_text.length - 1]; 
+          } else if (list_text.length > 3) {
+            list_text = [];
+            list_text.push(message.text);
+            subText.textContent += "\u200B" + list_text[list_text.length - 1];
+          } else {
+            list_text.push(message.text);
+            let subTextContentArray = subText.textContent.split("\u200B");
+            let remove = subTextContentArray.pop();
+            subText.textContent -= remove;
+            subText.textContent += "\u200B" + list_text[list_text.length - 1];
+          }
           subText.textContent += "\u200B" + message.text;
           scrollToBottom(subText);
           chrome.storage.local.set({summariseChat: subText.innerText,isSummarise:isSummarise}, function() {
