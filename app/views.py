@@ -30,6 +30,7 @@ from .forms import RegisterForm,LoginForm,PasswordChangeForm1
 from .models import RecordUser, RecordSpeechText
 import tempfile 
 
+
 def get_home(request):
     context = {}
     context['token'] = request.session.get('token', '')
