@@ -26,6 +26,7 @@ Dưới đây là một số hình ảnh chụp màn hình của ứng dụng:
 ![Trang Chính](images/images/trangchu.jpg)
 *Hình ảnh của trang chính với chức năng tải lên tệp video và hiển thị phụ đề.*
 ![Kết quả](images/images/kqphude.jpg)
+![Kết quả](images/images/ketqua.jpg)
 #### Trang Kết Quả
 ![Trang Kết Quả](images/images/extension.jpg)
 *Hình ảnh của trang kết quả hiển thị phụ đề đã chuyển đổi và dịch thuật.*
