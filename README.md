@@ -1,17 +1,9 @@
-# Tên ứng dụng
-
-- Mô tả vắn tắt tên ứng dụng ở đây (Gợi ý: ứng dụng giải quyết vấn đề gì, có các đối tượng người dùng như thế nào, có các chức năng gì...)
-
-- Bạn có thể trải nghiệm ứng dụng ở đây [LINK](https://update-this-link)
-- Một số sceenshot của ứng dụng
 # Nhóm 2: Xây dựng trang web và extension cho text to speech transcript và translation
 
-- Mô tả vắn tắt tên ứng dụng ở đây (Gợi ý: ứng dụng giải quyết vấn đề gì, có các đối tượng người dùng như thế nào, có các chức năng gì...)
-
-- Bạn có thể trải nghiệm ứng dụng ở đây [LINK](https://update-this-link)
-- Một số sceenshot của ứng dụng
 
 Trong quá trình học tập thì lượng kiến thức, khóa học trực tuyến thường là những khóa học bằng tiếng Anh. Cho nên việc tiếp cận các kiến thức đang bị rào cản bởi ngoại ngữ. Để tăng cường hiệu suất học tập, làm việc thì nhóm nảy ra ý tưởng để vượt qua rào cản đó bằng việc phát triển tiện ích hỗ trợ tạo phụ đề cho video (speech to text) và dịch phụ đề (translate) cho tiếng Việt.
+
+Demo ứng dụng: https://www.youtube.com/watch?v=eDP4CZxdgJs
 
 **Phạm vi dự án**
 
@@ -25,6 +17,7 @@ Extension:
 - Chức năng phụ đề từ giọng nói và dịch thành tiếng việt theo thời gian thực.
 - Tóm tắt cuộc hội thoại.
 - Chatbot trực tiếp trong quá trình tham gia cuộc hội thoại với khả năng đưa ra kết quả tốt hơn so với việc chat riêng lẻ do sử dụng dữ liệu từ cuộc hội thoại.
+![image](https://github.com/TaiDuongRepo/25_S2T/assets/97231719/62b0651d-d310-4865-9048-641427985ac6)
 
 ## CÀI ĐẶT
 
