@@ -101,3 +101,6 @@ MVP (Minimum Viable Product) của hệ thống dịch từ giọng nói sang v�
 		- UC04: Tóm tắt hội thoại
 		- UC05: Hỏi đáp dựa trên đoạn hội thoại
 		- UC06: Quản lý người dùng
+
+![Actor](images/images/actor.jpg)
+*Hinh ảnh minh họa Actor và Use-case*
