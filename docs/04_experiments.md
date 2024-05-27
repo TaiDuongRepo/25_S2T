@@ -37,16 +37,16 @@ Dưới đây là một số hình ảnh chụp màn hình của ứng dụng:
 ### 4.3. Kết Quả
 
 #### Làm Được
-- **Hiển thị phụ đề của video:** Cho phép người dùng tải lên tệp video và sử dụng API OpenAI Speech-to-Text để hiển thị phụ đề.
-- **Dịch phụ đề:** Hỗ trợ dịch phụ đề sử dụng API của OpenAI.
+- **Ghi hình và hiển thị phụ đề trên extension:** Cho phép người dùng quay màn hình máy tính và hiển thị popup phụ đề ngay lập tức.
 - **Tích hợp được một số tính năng đề xuất** : đã tích hợp một số tính năng như tóm tắt nội dung trong video, hỏi đáp dựa trên nội dung đó.
 - **Giao diện người dùng đơn giản:** Đã phát triển trang chính với chức năng tải lên tệp video, hiển thị phụ đề và dịch phụ đề.
 - **Quản lý phiên làm việc:** Lưu trữ phiên làm việc
-- **Ghi hình và hiển thị phụ đề trên extension:** Cho phép người dùng quay màn hình máy tính và hiển thị popup phụ đề ngay lập tức.
 - **Quản lý người dùng:** Đã tích hợp chức năng đăng ký và đăng nhập.
 
 #### Chưa Làm Được
 - **Chỉnh sửa văn bản:** Chưa hỗ trợ chỉnh sửa văn bản đã chuyển đổi và dịch thuật trực tiếp trong video
+- **Hiển thị phụ đề của video trên trang web:** Cho phép người dùng tải lên tệp video và sử dụng API OpenAI Speech-to-Text để hiển thị phụ đề.
+- **Dịch phụ đề trên trang web:** Hỗ trợ dịch phụ đề sử dụng API của OpenAI.
 
 #### Hướng Phát Triển
 - **Nâng cao chất lượng chuyển đổi và dịch thuật:** Huấn luyện các mô hình AI/ML để tiết kiệm chi phí cũng như cải thiện độ chính xác.
