@@ -2,7 +2,9 @@
 
 
 Trong quá trình học tập thì lượng kiến thức, khóa học trực tuyến thường là những khóa học bằng tiếng Anh. Cho nên việc tiếp cận các kiến thức đang bị rào cản bởi ngoại ngữ. Để tăng cường hiệu suất học tập, làm việc thì nhóm nảy ra ý tưởng để vượt qua rào cản đó bằng việc phát triển tiện ích hỗ trợ tạo phụ đề cho video (speech to text) và dịch phụ đề (translate) cho tiếng Việt.
+
 Demo ứng dụng: https://www.youtube.com/watch?v=eDP4CZxdgJs
+
 **Phạm vi dự án**
 
 Trang Web: 
