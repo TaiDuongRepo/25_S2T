@@ -1,3 +1,3 @@
 @echo off
-pip freeze > requirements.txt
+@REM pip freeze > requirements.txt
 python manage.py runserver

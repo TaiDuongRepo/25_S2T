@@ -27,11 +27,11 @@ Dưới đây là một số hình ảnh chụp màn hình của ứng dụng:
 *Hình ảnh của trang chính với chức năng tải lên tệp video và hiển thị phụ đề.*
 
 #### Trang Kết Quả
-![Trang Kết Quả](path/to/result_page_screenshot.png)
+![Trang Kết Quả](images\extension.png)
 *Hình ảnh của trang kết quả hiển thị phụ đề đã chuyển đổi và dịch thuật.*
 
 #### Extension Popup
-![Extension Popup](path/to/extension_popup_screenshot.png)
+![Extension Popup](images\extension.png)
 *Hình ảnh của popup extension với chức năng ghi âm và hiển thị phụ đề trực tiếp.*
 
 ### 4.3. Kết Quả
