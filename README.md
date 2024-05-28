@@ -129,7 +129,7 @@ Load lại trang web và sử dụng ứng dụng MVP
 - Nguyễn Văn Nam - 21017711
 - Hoàng Tiến Anh - 21068521
 - Lê Thanh Di - 21018401
-- Dương Văn Tài - msv
+- Dương Văn Tài - 21136801
 
 ## TRÁCH NHIỆM
 
